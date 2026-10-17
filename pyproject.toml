@@ -1,0 +1,22 @@
+[project]
+name = "metro-ticket-system"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rnaamrelgendy-dotcom", email = "rnaamrelgendy@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django>=6.1.1",
+    "django-filter>=26.1",
+    "djangorestframework>=3.18.1",
+    "djangorestframework-simplejwt>=5.5.1",
+]
+
+[project.scripts]
+metro-ticket-system = "metro_ticket_system:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
